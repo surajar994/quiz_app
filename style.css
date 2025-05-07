@@ -31,6 +31,7 @@ body {
   #question-box {
     font-size: 1.3rem;
     margin: 1rem 0;
+    width:100%;
   }
   
   #options-box {
@@ -78,6 +79,8 @@ body {
     border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
+    height: 45px;
+    width: 120px;
   }
   
   #skip-btn:hover {
@@ -95,19 +98,21 @@ body {
   }
   
   .review-item {
-    display: flex;
-    flex-direction: column;
-    background: #f1f1f1;
+    background: #f9f9f4;
     padding: 1rem;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    width: 100%;
+    border-left : 5px solid #dc3545;
+    border-right: 5px solid #dc3545;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-bottom: 1px solid red;
+    margin : 5px;
   }
   
   .review-item p {
     margin: 0.25rem 0;
     width: 100%;
     word-wrap: break-word;
+    
   }
   
   .review-item hr {
@@ -116,3 +121,38 @@ body {
     height: 1px;
     background: #ccc;
   }
+  .review-scroll {
+    max-height: 400px; /* Adjust as needed */
+    height:150px;
+    overflow-y: auto;
+    width: 100%;
+    padding-right: 0.5rem; /* space for scrollbar */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+  }
+  
+  .review-grid {
+    display: block;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }  
+
+  .restart-btn {
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #28a745;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .restart-btn:hover {
+    background-color: #218838;
+  }
+  
