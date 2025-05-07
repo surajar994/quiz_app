@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f7f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .quiz-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+  }
+  
+  #badge {
+    font-size: 2rem;
+    background: #007BFF;
+    color: white;
+    border-radius: 999px;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+  
+  #question-box {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+  }
+  
+  #options-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .option-btn {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    background: #eeeeee;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .option-btn:hover {
+    background: #ddd;
+  }
+  
+  .option-btn.correct {
+    background-color: #28a745 !important;
+    color: white;
+  }
+  
+  .option-btn.wrong {
+    background-color: #dc3545 !important;
+    color: white;
+  }
+  
+  #controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #skip-btn {
+    padding: 0.5rem 1rem;
+    background: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  #skip-btn:hover {
+    background: #e68900;
+  }
+  
+  #timer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007BFF;
+  }
+  .review-container {
+    text-align: left;
+    width: 100%;
+  }
+  
+  .review-item {
+    display: flex;
+    flex-direction: column;
+    background: #f1f1f1;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  
+  .review-item p {
+    margin: 0.25rem 0;
+    width: 100%;
+    word-wrap: break-word;
+  }
+  
+  .review-item hr {
+    margin-top: 0.5rem;
+    border: 0;
+    height: 1px;
+    background: #ccc;
+  }
