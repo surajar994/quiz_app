@@ -24,7 +24,7 @@ function shuffle(array) {
 
 function showQuestion() {
     clearInterval(timer);
-    timeLeft = 2;
+    timeLeft = 60;
     timerBox.textContent = timeLeft;
     startTimer();
 
