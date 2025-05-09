@@ -8,7 +8,7 @@ fetch('questions.json')
 
       const question = document.createElement('p');
       question.className = 'question-text';
-      question.textContent = `${index + 1}. ${q.question}`;
+      question.textContent = `${q.id}. ${q.question}`;
       div.appendChild(question);
 
       const ul = document.createElement('ul');
