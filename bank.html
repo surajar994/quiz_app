@@ -15,7 +15,10 @@
 
   <script src="bank.js"></script>
   <script>
+    document.getElementById('refresh-btn').addEventListener('click', () => {
+    // Append a random query string to force reload
     window.location.href = window.location.pathname + '?reload=' + new Date().getTime();
+  });
   </script>
   
 </body>
