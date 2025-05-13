@@ -11,7 +11,14 @@
     <h1>All Questions</h1>
     <div id="question-list"></div>
   </div>
+  <button id="refresh-btn" title="Reload Page">🔄</button>
 
   <script src="bank.js"></script>
+  <script>
+    document.getElementById('refresh-btn').addEventListener('click', () => {
+      window.location.reload();
+    });
+  </script>
+  
 </body>
 </html>
