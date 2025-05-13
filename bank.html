@@ -15,9 +15,7 @@
 
   <script src="bank.js"></script>
   <script>
-    document.getElementById('refresh-btn').addEventListener('click', () => {
-      window.location.reload();
-    });
+    window.location.href = window.location.pathname + '?reload=' + new Date().getTime();
   </script>
   
 </body>
